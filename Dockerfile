@@ -8,7 +8,7 @@ RUN apt-get -qq update && apt-get install -y build-essential \
 
 RUN pip install boto3 requests
 
-COPY test-assume-role.py .
+COPY assume-role-test.py .
 
 # set ROLE_ARN before calling
 
